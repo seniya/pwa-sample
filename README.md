@@ -108,8 +108,8 @@ self.addEventListener('fetch', function(e) {
 
 ## 현실적인 이용 전략
 
-- **PWA**를 구성하는 핵심 기술은 **Service Worker(오프라인 캐싱)**을 통한 속도 향상.
--  마찬가지로 사용 속도를 더욱 높이려는 여러 기술들이 키워드의 중심이 됨. 
+- **PWA**를 구성하는 핵심 기술은 **Service Worker**(오프라인 캐싱) 을 통한 속도 향상.
+-  마찬가지로 사용 속도를 더욱 높이려는 여러 기술들이 키워드의 중심이 됨.
   : 리소스의 최소화, Lazy Loding 기법, CRP(critical rendering path) 등등
 - 결국 Web App 의 미래 진행방향을 풀어놓은 컨셉이라 판단됨.
 
@@ -148,7 +148,8 @@ self.addEventListener('install', function(e) {
 });
 
 /*
-이전 서비스 워커가 사라지고 새 서비스 워커가 클라이언트를 제어할 수 있는 경우 이 작업이 시작됨. 데이터베이스 마이그레이션 및 캐시 지우기 같은 작업을 진행함.
+이전 서비스 워커가 사라지고 새 서비스 워커가 클라이언트를 제어할 수 있는 경우 이 작업이 시작됨. 
+데이터베이스 마이그레이션 및 캐시 지우기 같은 작업을 진행함.
 */
 self.addEventListener('activate', function(e) {
   console.log('[ServiceWorker] Activate');
