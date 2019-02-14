@@ -104,13 +104,14 @@ self.addEventListener('fetch', function(e) {
 	...
 });
 ```
+![데모 화면](https://raw.githubusercontent.com/seniya/pwa-sample/master/pwa-example-6.png)
 
 
 ## 현실적인 이용 전략
 
 - **PWA**를 구성하는 핵심 기술은 **Service Worker**(오프라인 캐싱) 을 통한 속도 향상.
--  마찬가지로 사용 속도를 더욱 높이려는 여러 기술들이 키워드의 중심이 됨.
-  : 리소스의 최소화, Lazy Loding 기법, CRP(critical rendering path) 등등
+- 마찬가지로 사용 속도를 더욱 높이려는 여러 기술들이 키워드의 중심이 됨. 
+- 리소스의 최소화, Lazy Loding 기법, CRP(critical rendering path) 등등.
 - 결국 Web App 의 미래 진행방향을 풀어놓은 컨셉이라 판단됨.
 
 
